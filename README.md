@@ -9,12 +9,14 @@ This project will look into Rent the Runway's products - a. products that are av
 
 
 
+
+
 **This project will only focus on women's products.**
 
 ### Rent the Runway
-
+web scraping: https://www.renttherunway.com/ using selenium
 
 ### Saks Fifth Avenue
-
+web scraping: https://www.saksfifthavenue.com/ using selenium
 
 ### The RealReal
