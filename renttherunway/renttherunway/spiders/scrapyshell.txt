@@ -1,0 +1,23 @@
+https://www.renttherunway.com/c/dresses?filters%5Bzip_code%5D=08901&sort=recommended&page=1&_=1604176342590#1604177185813
+
+scrapy shell -s USER_AGENT="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36" "https://www.renttherunway.com/c/dresses?filters%5Bzip_code%5D=08901&sort=recommended&page=1&_=1604176342590#1604180474103"
+
+
+//*[@id="page-content"]/div[1]/div[2]/div/div[1]/div[3]/div[3]/div[2]/div/div[1]
+
+
+/html/body/div[3]/div[1]/div[2]/div/div[1]/div[3]/div[3]/div[2]/div/div[2]
+
+//*[@id="page-content"]/div[1]/div[2]/div/div[1]/div[3]/div[3]/div[2]/div/div[2]
+
+#page-content > div.page-content-wrapper > div:nth-child(2) > div > div.grid > div.grid__inner > div.grid__content > div.products-wrapper > div > div:nth-child(2)
+
+document.querySelector("#page-content > div.page-content-wrapper > div:nth-child(2) > div > div.grid > div.grid__inner > div.grid__content > div.products-wrapper > div > div:nth-child(2)")
+
+
+
+
+
+
+
+scrapy shell -s USER_AGENT="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36" "https://www.bestbuy.com/site/searchpage.jsp?_dyncharset=UTF-8&id=pcat17071&iht=y&keys=keys&ks=960&list=n&qp=monitorscreensizerange_facet%3DScreen%20Size~33%22%20-%2049%22&sc=Global&st=monitor&type=page&usc=All%20Categories"
