@@ -4,5 +4,6 @@
 *.docx
 *.pdf
 .ipynb_checkpoints
-#.R
+*.R
+*.Rproj
 .Rproj.user
