@@ -13,10 +13,58 @@ This project will look into Rent the Runway's products - a. products that are av
 
 **This project will only focus on women's products.**
 
-### Rent the Runway
+### Rent the Runway (All Clothing)
 web scraping: https://www.renttherunway.com/ using selenium
+**renttherunway_final.csv**
+
+*1551 Observations*
+
+- brand_name: brand name
+- product_name: product name
+- original_price: original retail price
+- price: price 
+- num_reviews: number of reivews
+- mem_price: membership price
+- category
+
+
+
+### Rent the Runway (Sales Product)
+**renttherunway_sale.csv**
+
+
+- brand_name: brand name
+- product_name: product name
+- original_price: original retail price
+- price: price 
+- num_reviews: number of reivews
+- mem_price: membership price
+- category
+
+
+### Rent the Runway (Reviews Data)
+**renttherunway_reviews.csv**
+
+*134985 Observations*
+
+- brand_name: brand name
+- product_name: product name
+- original_price: original retail price
+- price: price 
+- num_reviews: number of reivews
+- mem_price: membership price
+- review_title
+- cateogory
 
 ### Saks Fifth Avenue
 web scraping: https://www.saksfifthavenue.com/ using selenium
 
+- brand_name: brand name
+- product_name: product name
+- category
+- price
+
 ### The RealReal
+
+
+
