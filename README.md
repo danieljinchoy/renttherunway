@@ -9,8 +9,6 @@ This project will look into Rent the Runway's products - a. products that are av
 
 
 
-
-
 **This project will only focus on women's products.**
 
 
