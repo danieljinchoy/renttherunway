@@ -30,7 +30,7 @@ except:
 
 
 for category in category_list:
-    category_url = f'https://www.saksfifthavenue.com/c/women-s-apparel/{category}'
+    category_url = f'https://www.renttherunway.com/products/{clothing}'
     driver.get(category_url)
     time.sleep(4)
     num_item = driver.find_element_by_xpath('//span[@class="search-count d-none d-lg-inline-block"]').text
@@ -92,7 +92,7 @@ for category in category_list:
         
             # product page -> collect information
             # category, brand name, product name, price, discount_price
-            website = 'Saksfithavenue'
+            website = 'renttherunway'
             cat = category
             try:
                 brand_name = driver.find_element_by_xpath('//h1[@class="product-brand-name d-none d-sm-block"]').text
@@ -100,9 +100,9 @@ for category in category_list:
                 brand_name = None
             
             try:
-                product_name = driver.find_element_by_xpath('//div/h1[@class="product-name h2 d-none d-sm-block"]').text
+                name = driver.find_element_by_xpath('//div/h1[@class="product-name h2 d-none d-sm-block"]').text
             except:
-                product_name = None
+                name = None
             
             try:
                 price = driver.find_element_by_xpath('//span[@class="value"]').get_attribute('content')
@@ -116,11 +116,9 @@ for category in category_list:
         
         
             # final csv file
-            item['website'] = website
             item['brand_name'] = brand_name
-            item['product_name'] = product_name
+            item['name'] = name
             item['category'] = re.search('\w*\/*\w+\/((\w+-*)+)',cat).group(1)
-            item['sex'] =  re.search('((\w+-*)+)\/',cat).group(1)
             item['price'] = price
             
             writer.writerow(item.values())
